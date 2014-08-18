@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=GNOME with Xmonad - Alknaion
+Comment=A GNOME fallback mode session using xmonad as the window manager.
+Exec=gnome-session --session xmonad-alknaion "$@"
+TryExec=gnome-session
+Icon=xmonad.png
+Type=Application

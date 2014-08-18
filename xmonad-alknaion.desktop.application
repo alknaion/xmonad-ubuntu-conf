@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=Xmonad - Alknaion
+Comment=Lightweight tiling window manager
+Icon=xmonad.png
+Exec=.xmonad/xmonad-start.sh
+TryExec=/bin/bash
+NoDisplay=true
+X-GNOME-WMName=Xmonad
+X-GNOME-Autostart-Phase=WindowManager
+X-GNOME-Provides=windowmanager
+X-GNOME-Autostart-Notify=true

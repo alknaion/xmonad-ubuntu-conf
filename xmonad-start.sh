@@ -12,11 +12,13 @@
 
 # Identify the home of our gtkrc file, important for setting styles of 
 # gtk-based applications
-#export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
+export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
 
 # Load X resources (fixes some font issues)
 xrdb -merge .Xresources
 
+hsetroot -solid "#000000" # Stops The Gray Background
+#xli -private -onroot -dispgamma 1.0 /usr/share/backgrounds/warty-final-ubuntu.png
 # Start compositing to support transparency. You can omit this
 # if you prefer not to use any transparency, but it is likely to cause
 # ugly black fringing with some programs such as synapse that expect
@@ -82,11 +84,11 @@ nitrogen --restore &
 #
 stalonetray \
   --icon-gravity E \
-  --geometry 5x1-0+0 \
-  --max-geometry 5x1-0+0 \
+  --geometry 5x1-0+12 \
   --background '#000000' \
   --skip-taskbar \
   --icon-size 24 \
+  --transparent \
   --kludges force_icons_size \
   --window-strut none \
 &

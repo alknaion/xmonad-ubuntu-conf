@@ -1,0 +1,3 @@
+[GNOME Session]
+Name=Xmonad/GNOME - Alknaion
+RequiredComponents=gnome-settings-daemon;xmonad-alknaion
