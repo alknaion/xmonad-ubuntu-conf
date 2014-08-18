@@ -12,7 +12,7 @@
 
 # Identify the home of our gtkrc file, important for setting styles of 
 # gtk-based applications
-export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
+#export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
 
 # Load X resources (fixes some font issues)
 xrdb -merge .Xresources
@@ -37,15 +37,15 @@ xcompmgr -n &
 # connected screens and find out what names you should use to refer to them.
 
 # Activate primary screen 
-xrandr --output LVDS-1 --auto --primary
+#xrandr --output LVDS-1 --auto --primary
 
 # If we find that a screen is connected via VGA, activate it and position it
 # to the left of the primary screen.
-xrandr | grep 'VGA-1 connected' | ifne xrandr --output VGA-1 --auto --left-of LVDS-1
+#xrandr | grep 'VGA-1 connected' | ifne xrandr --output VGA-1 --auto --left-of LVDS-1
 
 # If we find that a screen is connected via DVI, activate it and position it
 # to the left of the primary screen.
-xrandr | grep 'DP-1 connected' | ifne xrandr --output DP-1 --auto --left-of LVDS-1
+#xrandr | grep 'DP-1 connected' | ifne xrandr --output DP-1 --auto --left-of LVDS-1
 
 
 #
@@ -99,7 +99,7 @@ gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh
 
 # Remap caps lock to left control. This is not strictly speaking
 # xmonad related, but it's handy if you're a vim user.
-setxkbmap -option 'ctrl:nocaps'
+#setxkbmap -option 'ctrl:nocaps'
 
 # Now, finally, start xmonad
 exec xmonad

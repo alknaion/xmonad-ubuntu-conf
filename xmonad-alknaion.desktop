@@ -3,8 +3,8 @@
 # ~/.xmonad directory with a start-xmonad script in it.
 [Desktop Entry]
 Encoding=UTF-8
-Name=XMonad
+Name=XMonad - Alknaion
 Comment=Lightweight tiling window manager
-Exec=.xmonad/start-xmonad
+Exec=.xmonad/xmonad-start.sh
 Icon=custom_xmonad_badge.png
 Type=XSession
