@@ -26,6 +26,9 @@ hsetroot -solid "#000000" # Stops The Gray Background
 xcompmgr -n &
 
 
+
+/storage/scripts/gvfs-automount.py & 
+
 #
 # SCREEN CONFIGURATION
 #
@@ -92,6 +95,8 @@ stalonetray \
   --kludges force_icons_size \
   --window-strut none \
 &
+
+/storage/scripts/conky_init.sh 10 &
 
 # Run the gnome-keyring-daemon to avoid issues you otherwise may encounter
 # when using gnome applications which expect access to the keyring, such
